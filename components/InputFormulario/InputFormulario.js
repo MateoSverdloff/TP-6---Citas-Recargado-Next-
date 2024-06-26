@@ -5,10 +5,11 @@ export function InputFormulario({ label, type, name, placeholder, value, onChang
   return (
     <> 
       <label>{label}</label>
-      <input 
-        type={type} 
-        name={name} 
-        className="u-full-width" 
+      <input
+        type={type}
+        name={name}
+        autoComplete='off'
+        className="u-full-width"
         placeholder={placeholder} 
         value={value} 
         onChange={onChange} 

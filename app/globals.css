@@ -1,0 +1,230 @@
+html {
+    min-height: 100%;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    background-image: linear-gradient(-225deg, #A445B2 0%, #D41872 52%, #FF0066 100%);
+    min-height: 100%;
+    padding-bottom: 5rem;
+  }
+  
+  .navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+  }
+  
+  .navbar-list {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .navbar-item {
+    margin: 0 1rem;
+  }
+  
+  .navbar-item a {
+    text-decoration: none;
+    color: #D41872;
+    font-size: 1.2rem;
+    font-weight: bold;
+    padding: 1rem;
+    display: block;
+  }
+  
+  .navbar-item a:hover {
+    color: #A445B2;
+  }
+  
+  .bienvenida,
+  .quienes-somos,
+  .reservas {
+    background: rgba(255, 255, 255, 0.8);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: center;
+    max-width: 800px;
+    margin: 5rem auto 0; 
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .bienvenida h1,
+  .quienes-somos h1,
+  .reservas h1 {
+    color: #D41872;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bienvenida h2,
+  .quienes-somos h2,
+  .reservas h2 {
+    color: #A445B2;
+    font-size: 2rem;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+  
+  .bienvenida p,
+  .quienes-somos p,
+  .reservas p {
+    color: #333;
+    font-size: 1.2rem;
+    line-height: 1.6;
+  }
+  
+  .bienvenida p strong,
+  .quienes-somos p strong,
+  .reservas p strong {
+    font-weight: bold;
+  }
+  
+  .lista-citas .media {
+    border-bottom: 1px solid #e1e1e1;
+    padding-bottom: 3rem;
+  }
+  
+  .lista-citas .media:last-of-type {
+    border-bottom: 0;
+  }
+  
+  .lista-citas .media-body p {
+    margin: 0;
+  }
+  
+  .lista-citas .media-body button {
+    margin-top: 1rem !important;
+  }
+  
+  .lista-citas .media-body span {
+    font-weight: bold;
+  }
+  
+  label {
+    color: white;
+  }
+  
+  input[type="date"],
+  input[type="time"] {
+    height: 38px;
+    padding: 6px 10px;
+    background-color: #fff;
+    border: 1px solid #D1D1D1;
+    border-radius: 4px;
+    box-shadow: none;
+    box-sizing: border-box;
+  }
+  
+  .cita {
+    padding: 2rem;
+    background: white;
+    border-bottom: 1px solid #e1e1e1;
+    color: black;
+    margin-bottom: 20px;
+  }
+  
+  .cita p {
+    font-weight: bold;
+    margin-bottom: .8rem;
+  }
+  
+  .cita p span {
+    font-weight: normal;
+  }
+  
+  .cita:first-of-type {
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  
+  .cita:last-of-type {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+  
+  .button.eliminar,
+  .button.eliminar:hover {
+    background-color: #c10059;
+    color: white;
+    margin-top: 2rem;
+  }
+  
+  .alerta-error {
+    background-color: white;
+    color: red;
+    padding: 1rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Staatliches', cursive;
+  }
+  
+  .form-page {
+    padding: 2rem;
+    text-align: center;
+    color: white;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 1rem;
+    max-width: 800px;
+    margin: 5rem auto;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container {
+    background: rgba(255, 255, 255, 0.9);
+    padding: 2rem;
+    border-radius: 1rem;
+    text-align: left;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.form-container h2 {
+    color: #D41872;
+    margin-bottom: 1rem;
+}
+
+.form-container label {
+    display: block;
+    color: #333;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-container input,
+.form-container textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.form-container button {
+    background-color: #D41872;
+    color: white;
+    border: none;
+    padding: 0.75rem 1.5rem;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-container button:hover {
+    background-color: #A445B2;
+}
+
+.message {
+    margin-top: 1rem;
+    color: #D41872;
+    font-weight: bold;
+}

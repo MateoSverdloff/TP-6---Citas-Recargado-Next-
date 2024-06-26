@@ -1,10 +1,13 @@
 "use client";
+import Navbar from '../Navbar.js';
+
+
 
 import React, { useState } from 'react';
 import { Cita } from '../../components/Cita/Cita.js';
 import { Formulario } from '../../components/Formulario/Formulario.js';
 
-export default function App() {
+export default function Reservas() {
   const [citas, setCitas] = useState([]);
 
   const agregarCita = (nuevaCita) => {
@@ -19,18 +22,21 @@ export default function App() {
 
   return (
     <>
-      <h1>ADMINISTRADOR DE PACIENTES</h1>
-      <div className="container">
-        <div className="row">
-          <div className="one-half column">
-            <h2>Crear mi Cita</h2>
-            <Formulario agregarCita={agregarCita} />
-          </div>
-          <div className="one-half column">
-            <h2>Administra tus citas</h2>
-            {citas.map((cita) => (
-              <Cita key={cita.id} cita={cita} eliminarCita={eliminarCita} />
-            ))}
+      <Navbar />
+      <div className="reservas">
+        <h1>ADMINISTRADOR DE PACIENTES</h1>
+        <div className="container">
+          <div className="row">
+            <div className="one-half column">
+              <h2>Crear mi Cita</h2>
+              <Formulario agregarCita={agregarCita} />
+            </div>
+            <div className="one-half column">
+              <h2>Administra tus citas</h2>
+              {citas.map((cita) => (
+                <Cita key={cita.id} cita={cita} eliminarCita={eliminarCita} />
+              ))}
+            </div>
           </div>
         </div>
       </div>
