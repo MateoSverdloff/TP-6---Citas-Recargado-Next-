@@ -26,7 +26,7 @@ export function Formulario({ agregarCita }) {
   };
 
   return (
-    <form onSubmit={handleSubmit} className="form-container"> {/* Aplica la clase 'form-container' */}
+    <form onSubmit={handleSubmit} className="form-container">
       <h2>Crear mi Cita</h2>
       <InputFormulario
         label="Nombre"

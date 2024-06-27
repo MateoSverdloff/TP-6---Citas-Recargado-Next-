@@ -6,10 +6,9 @@ import { Cita } from '../../components/Cita/Cita.js';
 import { Formulario } from '../../components/Formulario/Formulario.js';
 
 export default function Reservas() {
-  const citasGuardadas = JSON.parse(localStorage.getItem('citas')) || []; // asegúrate de inicializar como un array si no hay citas guardadas
+  const citasGuardadas = JSON.parse(localStorage.getItem('citas')) || [];
   const [citas, setCitas] = useState(citasGuardadas);
 
-  // useEffect para guardar en localStorage cuando cambien las citas
   useEffect(() => {
     localStorage.setItem('citas', JSON.stringify(citas));
   }, [citas]);
