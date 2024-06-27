@@ -19,7 +19,7 @@ export default function quienesSomos(){
           <h2>Manuel Ramasso</h2>
           <p><strong>Co-fundador y Gerente General</strong></p>
           <p>
-            Manuel Ramasso, con su sólida formación en gestión empresarial y su amor por los animales, asegura que nuestra clínica funcione sin problemas. Su dedicación y visión han sido fundamentales para establecer Veterinaria Vida Animal como un lugar de excelencia en cuidado animal.
+            Manuel Ramasso, con su sólida formación en gestión empresarial y su amor por los animales, asegura que nuestra clínica funcione sin problemas. Su dedicación y visión (con anteojos) han sido fundamentales para establecer Veterinaria Vida Animal como un lugar de excelencia en cuidado animal.
           </p>
           <h2>Nuestro Compromiso</h2>
           <p>

@@ -26,9 +26,10 @@ export function Formulario({ agregarCita }) {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
+    <form onSubmit={handleSubmit} className="form-container"> {/* Aplica la clase 'form-container' */}
+      <h2>Crear mi Cita</h2>
       <InputFormulario
-        label="Nombre Papu"
+        label="Nombre"
         type="text"
         name="mascota"
         placeholder="Nombre de la mascota"
@@ -50,14 +51,14 @@ export function Formulario({ agregarCita }) {
         onChange={handleChange}
       />
       <InputFormulario
-        label="Sintomas"
+        label="Síntomas"
         type="text"
         name="sintomas"
         placeholder="Descripción de los síntomas"
         value={nuevaCita.sintomas}
         onChange={handleChange}
       />
-      <button type="submit" className="u-full-width button-primary">
+      <button type="submit" className="button-primary">
         Agregar Cita
       </button>
     </form>

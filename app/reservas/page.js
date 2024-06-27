@@ -1,14 +1,18 @@
 "use client";
+
+import React, { useState, useEffect } from 'react';
 import Navbar from '../Navbar.js';
-
-
-
-import React, { useState } from 'react';
 import { Cita } from '../../components/Cita/Cita.js';
 import { Formulario } from '../../components/Formulario/Formulario.js';
 
 export default function Reservas() {
-  const [citas, setCitas] = useState([]);
+  const citasGuardadas = JSON.parse(localStorage.getItem('citas')) || []; // asegúrate de inicializar como un array si no hay citas guardadas
+  const [citas, setCitas] = useState(citasGuardadas);
+
+  // useEffect para guardar en localStorage cuando cambien las citas
+  useEffect(() => {
+    localStorage.setItem('citas', JSON.stringify(citas));
+  }, [citas]);
 
   const agregarCita = (nuevaCita) => {
     const citaConId = { ...nuevaCita, id: Date.now() };

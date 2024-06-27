@@ -1,6 +1,6 @@
 "use client";
 import Navbar from '../Navbar.js';
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function Contacto() {
     const [email, setEmail] = useState('');
